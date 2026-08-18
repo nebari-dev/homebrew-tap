@@ -5,21 +5,21 @@
 class Skillsctl < Formula
   desc "CLI for discovering, installing, and publishing Claude Code skills"
   homepage "https://github.com/nebari-dev/skillsctl"
-  version "0.2.1"
+  version "0.2.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nebari-dev/skillsctl/releases/download/v0.2.1/skillsctl_0.2.1_darwin_amd64.tar.gz"
-      sha256 "d3c6af3310ba6c2b0dd6a996aa91c412d3a27e9574cc1b7c35ec36c0cf03f56c"
+      url "https://github.com/nebari-dev/skillsctl/releases/download/v0.2.2/skillsctl_0.2.2_darwin_amd64.tar.gz"
+      sha256 "726754c558462345faacbb07f4318d106cc65975b418b1f411756fc6a482c9a1"
 
       define_method(:install) do
         bin.install "skillsctl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nebari-dev/skillsctl/releases/download/v0.2.1/skillsctl_0.2.1_darwin_arm64.tar.gz"
-      sha256 "65b6f7a9b943820468cf63cefd21575f79c9e4a43bda4ad8933f4618a750c66d"
+      url "https://github.com/nebari-dev/skillsctl/releases/download/v0.2.2/skillsctl_0.2.2_darwin_arm64.tar.gz"
+      sha256 "26cbc28c1d53dbf060a8254d3ec455de40f2933e61d7678d46a0766ebcf80727"
 
       define_method(:install) do
         bin.install "skillsctl"
@@ -29,15 +29,15 @@ class Skillsctl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nebari-dev/skillsctl/releases/download/v0.2.1/skillsctl_0.2.1_linux_amd64.tar.gz"
-      sha256 "018166454fab54b67124d4f49a6a6ba2a28f0ca01a1accc730d8d92786b4c422"
+      url "https://github.com/nebari-dev/skillsctl/releases/download/v0.2.2/skillsctl_0.2.2_linux_amd64.tar.gz"
+      sha256 "0e0e795ad2ee523b9e7f1a3e5602d114e9c1f1f122715da5de13d31fc8f37c40"
       define_method(:install) do
         bin.install "skillsctl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nebari-dev/skillsctl/releases/download/v0.2.1/skillsctl_0.2.1_linux_arm64.tar.gz"
-      sha256 "178bf77049e831f31d1b74c43dc03defbe1433fd5064f75e18d1007509101597"
+      url "https://github.com/nebari-dev/skillsctl/releases/download/v0.2.2/skillsctl_0.2.2_linux_arm64.tar.gz"
+      sha256 "bb9be91aa91d9f4dcc44d6bdb926ce4b804cd59c2c44ea6f28e997edd618085f"
       define_method(:install) do
         bin.install "skillsctl"
       end
