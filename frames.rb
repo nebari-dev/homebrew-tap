@@ -5,21 +5,21 @@
 class Frames < Formula
   desc "CLI for publishing, browsing, and resolving Nebari Frames"
   homepage "https://github.com/nebari-dev/nebari-frames"
-  version "0.1.6"
+  version "0.1.7"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nebari-dev/nebari-frames/releases/download/v0.1.6/frames_0.1.6_darwin_amd64.tar.gz"
-      sha256 "f4852adcc6f936544df34d0d8f20426a48a0ce6ecc4a94a337143c695e02294b"
+      url "https://github.com/nebari-dev/nebari-frames/releases/download/v0.1.7/frames_0.1.7_darwin_amd64.tar.gz"
+      sha256 "047abbeeb49aca1da7d6672f6a4b68a9c8a0136654fc3d74457a9fd57a7deb40"
 
       define_method(:install) do
         bin.install "frames"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nebari-dev/nebari-frames/releases/download/v0.1.6/frames_0.1.6_darwin_arm64.tar.gz"
-      sha256 "5554b14cd7cfa302d47798aa523a589751901cb1ba8686f9de6c43a2e17e0b7f"
+      url "https://github.com/nebari-dev/nebari-frames/releases/download/v0.1.7/frames_0.1.7_darwin_arm64.tar.gz"
+      sha256 "6340bcfdaff326dc8dc74dfe2140e55d56e87e58d7d355d9143bce70ebacb9d4"
 
       define_method(:install) do
         bin.install "frames"
@@ -29,15 +29,15 @@ class Frames < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nebari-dev/nebari-frames/releases/download/v0.1.6/frames_0.1.6_linux_amd64.tar.gz"
-      sha256 "d4fceeea4c5e7e7ebe4e5678d23793f5a3d0efadb589d89674de0dcf6e0107a5"
+      url "https://github.com/nebari-dev/nebari-frames/releases/download/v0.1.7/frames_0.1.7_linux_amd64.tar.gz"
+      sha256 "a1b7f52b89da0f3f656893ac8ee82603dfc153c9fe0c527087a89b35ed62ae1e"
       define_method(:install) do
         bin.install "frames"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nebari-dev/nebari-frames/releases/download/v0.1.6/frames_0.1.6_linux_arm64.tar.gz"
-      sha256 "7cc3d1416115d4caebf840ca81f25472c8bac4476adaefc61bf86e9c09457ab7"
+      url "https://github.com/nebari-dev/nebari-frames/releases/download/v0.1.7/frames_0.1.7_linux_arm64.tar.gz"
+      sha256 "0b3733206af55fd9729e070c046d29f202745d0f083c8d90325deb1a512db598"
       define_method(:install) do
         bin.install "frames"
       end
